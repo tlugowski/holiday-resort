@@ -2,9 +2,9 @@
   "name": "holiday-resort",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start:db": "json-server --watch database.json",
+    "build": "parcel build ./index.html",
     "start:app": "parcel ./index.html --open"
   },
   "keywords": [],
