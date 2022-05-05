@@ -7,13 +7,11 @@ export async function Attractions() {
   section.className = "attractions-section";
 
   section.innerHTML = `
-        <h2>Attractions</h2>
         <p id="loading">Loading...</p>
     `;
   const attractions = await api.attractions.get();
 
-  const articles = attractions.map((attraction) => Attraction(attraction));
-  articles.className = "costam";
+  const articles = attractions.map(attraction => Attraction(attraction));
 
   section.querySelector("#loading").remove();
   section.append(...articles);

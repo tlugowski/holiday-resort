@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./holiday-resort.scss";
 import { Navigation } from "./navigation/Navigation";
-import { Rooms } from "./views/RoomsView";
+import { Home } from "./views/HomeView";
 import { HeaderView } from "./views/HeaderView";
 
 const body = document.querySelector("body");
@@ -12,11 +12,11 @@ const main = document.querySelector("main");
 
 main.before(Navigation());
 
-Rooms().then((LoginViewContainer) => {
+Home().then(LoginViewContainer => {
   main.append(LoginViewContainer);
 });
 
-document.body.addEventListener("navigate", async (event) => {
+document.body.addEventListener("navigate", async event => {
   const { detail: Component } = event;
   main.innerHTML = "";
   main.append(await Component());

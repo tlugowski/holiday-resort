@@ -1,3 +1,4 @@
+import { Home } from "../views/HomeView";
 import { Rooms } from "../views/RoomsView";
 import { Attractions } from "../views/AttractionsView";
 import { NavigationButton } from "./NavigationButton";
@@ -7,6 +8,7 @@ import { LoginView } from "../views/LoginView";
 import { RegistrationView } from "../views/RegistrationView";
 
 export const navigationItems = [
+  { component: Home, name: "Home" },
   { component: Rooms, name: "Rooms" },
   { component: Attractions, name: "Attractions" },
   { component: Cart, name: "🛒" },
@@ -30,7 +32,7 @@ export function Navigation() {
 
   nav.append(...navigationButtons);
 
-  navigationButtons[3].classList.add("active-btn-login", "login-btn");
+  navigationButtons[4].classList.add("active-btn-login", "login-btn");
 
   return nav;
 }

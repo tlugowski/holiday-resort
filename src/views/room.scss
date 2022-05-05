@@ -10,18 +10,49 @@
 
 .room-img {
   max-width: 100%;
-  width: 1200px;
-  padding-bottom: 125px;
+  width: 400px;
+  height: 251px;
+}
+
+#article-desc {
+  font-size: 18px;
 }
 
 .ul-room-section {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
+  list-style-type: none;
+  justify-content: stretch;
+}
+
+.ul-room-section li {
+  height: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid var(--cyan);
+  margin: 10px auto;
+}
+
+.ul-room-section p {
+  color: var(--white);
 }
 
 .rooms-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.room-details-img {
+  margin: 30px;
+  width: calc(100% - (2 * 30px));
+  max-width: 800px;
+}
+
+.room-details-container {
+  width: 100%;
+  text-align: center;
 }
