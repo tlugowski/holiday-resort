@@ -18,6 +18,8 @@ The application should enable:
 
 ### Booking
 
+![cart](./pictures/cart.PNG)
+
 The shopping cart component that displays a summary of an order.
 The shopping cart makes it possible to make corrections to the order.
 The user cannot select an arrival date earlier than the current one.
@@ -25,18 +27,26 @@ The selected departure date cannot be more than one year from the arrival date.
 
 ### Registration
 
+![Registration](./pictures/Registration.PNG)
+
 Registration involves storing user details (email and password) in a `database.json` file.
 It should not be possible to register a user with an identical email address.
 
 ### Login
 
+![Login](./pictures/Login.PNG)
+
 The login component compares the data (email and password) provided by the user with those in the `database.json` file.
 
 ### Rooms
 
+![Rooms](./pictures/Rooms.PNG)
+
 The resort's rooms database is located in the `database.json` file.
 
 ### Attractions
+
+![Attractions](./pictures/Attractions.PNG)
 
 The database of sample resort treatments can be found in the `database.json` file.
 
