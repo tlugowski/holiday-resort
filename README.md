@@ -1,6 +1,6 @@
 # Holiday Resort
 
-![holiday_resort](./pictures/holiday_resort.gif)
+![holiday_resort](./pictures/holiday_resort.gif) \
 The project consists in writing a Single Page Application for a Holiday Resort dedicated to guests who want to relax.
 
 ## Project requirements
